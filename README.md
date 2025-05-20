@@ -1,1 +1,7 @@
-This portfolio project was made using different sources. Clone it and feel free to use it and modify it.
+# My old portfolio
+
+This is my old portfolio project, more on the "serious" side.  It was made using different sources. Clone it and feel free to use it and modify it.
+
+## Notes
+
+- Modify `src/content_options.js` to tailor content.
