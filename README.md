@@ -1,0 +1,1 @@
+This portfolio project was made using different sources. Clone it and feel free to use it and modify it.

@@ -1,0 +1,47 @@
+.caro-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 70px;
+  }
+  
+  .caro-track {
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    gap: 30px;
+  }
+  
+  .caro-card {
+    display: flex;
+    background-color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .caro-card > img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @keyframes scroll {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  
+  .animate {
+    animation: scroll 15s linear infinite;
+  }
+
+  @media only screen and (max-width: 1280px){
+    .caro-card > img{
+        height: 70%;
+        width: 100%;
+    }
+  }

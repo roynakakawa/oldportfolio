@@ -1,0 +1,77 @@
+.header_class{
+    background-color: var(--bg-color);
+    width: 100vw;
+    top: 0;
+}
+
+.menu_button{
+    border: unset;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    margin-right: 10px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    z-index: 10;
+}
+
+.menu_button:hover {
+    color: var(--text-color-2);
+}
+
+.menu_button svg{
+    width: 1.8em;
+    height: 1.8em;
+}
+
+.nav-menu-on{
+    height: 100%;
+    width: 100%;
+    transition: ease 0.7s;
+    background-color: var(--bg-color);
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-menu-off{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    transition: ease 0.5s; 
+    transform: translateY(-100%);
+}
+
+.menu_curtain{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 6;
+}
+
+.menu_curtain ul{
+    text-align: center;
+    padding-top: 30vh;
+}
+
+.menu_curtain li{
+    color: var(--text-color);
+    font-size: 3rem;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.menu_curtain li:hover{
+    color: var(--text-color-2);
+    transition: ease 0.3s;
+}
+
+@media only screen and (max-width: 992px) {
+    .menu_curtain ul{
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,52 @@
+.home_class{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.intro_sec {
+    height: 100vh;
+    min-height: 600px;
+}
+
+.text, .prof_image {
+    width: 50%;
+    height: 100%;
+}
+
+.intro{
+    align-self: center;
+    max-width: 550px;
+}
+
+.intro h2 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: var(--text-color-2);
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+
+.prof_image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    filter: saturate(0.7) brightness(0.85);
+}
+
+@media (max-width:992px) {
+    .intro_sec {
+        padding-top: 80px;
+        display: block;
+        height: 100%;
+    }
+    .text, .prof_image {
+        width: 100%;
+    }
+    .prof_image{
+        padding-bottom: 20px;
+    }
+}

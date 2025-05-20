@@ -1,0 +1,50 @@
+.about_class{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.about_container{
+    padding-top: 100px;
+}
+
+.t_border {
+    background-color: var(--text-color-2);
+    border: none;
+    height: 2px;
+}
+
+.progress-title {
+    margin: 15px 0 25px;
+}
+
+.progress {
+    height: 5px;
+    background: var(--primary-color);
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.progress .progress-bar {
+    position: relative;
+    background: var(--text-color);
+    animation: animate-positive 2s;
+    overflow: visible;
+    opacity: 0.8;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: -30px;
+    right: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
